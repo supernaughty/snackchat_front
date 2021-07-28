@@ -1,0 +1,1 @@
+export const CONSTANTS = "상수 관리";

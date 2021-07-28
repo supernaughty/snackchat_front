@@ -1,0 +1,1 @@
+export const PROJECT_ALL = "/project/all";
