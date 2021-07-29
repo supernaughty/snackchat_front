@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Login from "../pages/Login";
 import {USER, ADMIN} from "../auth/AuthRole";
 import Home from "../pages/Home";
+import LoginRoute from "../auth/LoginRoute";
+import AuthRoute from "../auth/AuthRoute";
 
 const Main = styled.div`
   display: flex;

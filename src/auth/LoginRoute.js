@@ -1,13 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import {Route, Redirect} from 'react-router-dom'
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
 
-function LoginRoute() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const isLogin = () => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    return false;
+  } else return true;
+};
 
-export default LoginRoute
+const LoginRoute = (props) => {
+  return <>{isLogin() ? <Route {...props} /> : <Redirect to="/" />}</>;
+};
+
+export default LoginRoute;
