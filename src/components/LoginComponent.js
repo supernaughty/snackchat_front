@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -29,7 +27,7 @@ const styles = theme => ({
   }
 });
 
-class Login extends Component {
+class LoginComponent extends Component {
   handleLogin = (e) => {
     e.preventDefault();
     alert('login');
@@ -54,4 +52,4 @@ class Login extends Component {
   }
 }
 
-export default withStyles(styles) (Login);
+export default withStyles(styles) (LoginComponent);

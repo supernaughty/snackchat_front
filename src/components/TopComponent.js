@@ -2,7 +2,7 @@ import React from "react";
 import { AppBar, Tabs, Tab } from "@material-ui/core";
 import { Home, Send, Person } from "@material-ui/icons";
 
-const TopHeader = () => {
+const TopComponent = () => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -26,4 +26,4 @@ const TopHeader = () => {
   );
 };
 
-export default TopHeader;
+export default TopComponent;
