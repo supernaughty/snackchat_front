@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
+import logo from '../images/logo_image.png';
 
 const styles = theme => ({
   loginTotal: {
@@ -38,13 +39,24 @@ class LoginComponent extends Component {
     return (
       <div className="root">
         <form noValidate autoComplete="off" className ={classes.loginTotal}>
+          <div>
+            <img src={logo} style={{"margin-left":"25%", "width":"20rem", "height": "10rem"}}/>
+          </div>
+          <div className={classes.join} style={{marginBottom:"1.25rem"}}>
+            SnackChat Account
+          </div>
           <TextField label="Email" margin="normal" fullWidth/>
           <TextField label="Password" type="password" margin="normal" fullWidth/>
           <div style={{marginTop:"1.25rem"}}>
             <Button style={{"width":"49%","font-size":"1rem", "text-transform":"none"}} variant="outlined" color="inherit" onClick={this.handleLogin}>Login</Button>
             <Button style={{"width":"49%", "margin-left":"2%", "font-size":"1rem", "text-transform":"none"}} variant="outlined" color="inherit">Forgot Passwrod?</Button>
           </div>
-          <div className={classes.join} >First time here? Create your account</div>
+          <div className={classes.join} style={{marginBottom:"1.25rem"}}>
+            First time here? Create your account
+          </div>
+          <div>
+            <Button style={{"width":"95%", "margin-left":"2%", "font-size":"1rem", "text-transform":"none"}} variant="outlined" color="inherit" onClick={this.handleLogin}>Create an account</Button>
+          </div>
         </form>
         
       </div>

@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "chrome debugger",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src"
+        },
+        {
+            "type": "devtools-for-chrome",
+            "request": "attach",
+            "name": "Attach Chrome DevTools",
+            "url": "http://localhost:3000/"
+        }
+    ]
+  }
