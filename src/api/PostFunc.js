@@ -7,8 +7,8 @@ import {
 const POST = "post";
 
 export default {
-    login(username, password) {
-        let data = { username, password };
+    login(email, password) {
+        let data = { email, password };
         return Axios({ url: LOGIN, method: POST, data: data });
     },
     logout(userId) {
